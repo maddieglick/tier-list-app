@@ -123,3 +123,9 @@ code {
   font-size: 30px;
   cursor:grab;
 }
+#intro{
+  padding:20px 20px 0px 20px;
+}
+#description{
+  padding:0px 350px 20px 20px;
+}
