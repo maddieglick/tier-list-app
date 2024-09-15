@@ -1,13 +1,125 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:VT323;
+  color:#070455;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #b3e5fc ;
+  font-size: 25px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.wrapper{
+  display:grid;
+  grid-template-columns: 80px 1000px 320px;
+  gap: 10px;
+  background-color: #070455;
+  padding:10px;
+}
+
+.rankColumn{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rankSpaceColumn{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.bankColumn{
+  display:flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sTier{
+  background-color: #ec7063 ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:80px;
+}
+
+.aTier{
+  background-color: #eb984e ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:80px;
+}
+
+.bTier{
+  background-color: #f8c471;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:80px;
+}
+.cTier{
+  background-color: #f7dc6f  ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:80px;
+}
+.dTier{
+  background-color: #9ccc65  ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:80px;
+}
+.fTier{
+  background-color: #4caf50  ;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:80px;
+}
+.rankSpace{
+  display: flex;
+  background-color:#90caf9 ;
+  height: 80px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.bank{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(48px, 1fr));
+  gap:10px;
+  background-color: #90caf9 ;
+  height: 530px;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+.emoji{
+  padding: 20px;
+  font-size: 30px;
+}
+#emoji{
+  padding: 20px;
+  font-size: 30px;
+  cursor:grab;
 }
