@@ -9,6 +9,19 @@ import Draggable from "react-draggable";
 import "./App.css";
 
 const DraggableEmoji = () => {
+  const emojiCodes = [
+    "\u{1F363}",
+    "\u{1F354}",
+    "\u{1F369}",
+    "\u{1F957}",
+    "\u{1F959}",
+    "\u{1F355}",
+    "\u{1F35F}",
+    "\u{1F32E}",
+    "\u{1F35C}",
+    "\u{1F366}",
+  ];
+
   return (
     <div className="wrapper">
       <div className="rankColumn">
@@ -29,36 +42,11 @@ const DraggableEmoji = () => {
       </div>
       <div className="bankColumn">
         <div className="bank">
-          <Draggable>
-            <div id="emoji">{"\u{1F363}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F354}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F369}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F957}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F959}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F355}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F35F}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F32E}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F35C}"}</div>
-          </Draggable>
-          <Draggable>
-            <div id="emoji">{"\u{1F366}"}</div>
-          </Draggable>
+          {emojiCodes.map((emoji, index) => (
+            <Draggable key={index}>
+              <div id="emoji">{emoji}</div>
+            </Draggable>
+          ))}
         </div>
       </div>
     </div>
