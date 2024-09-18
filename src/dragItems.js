@@ -8,6 +8,7 @@ import React from "react";
 import Draggable from "react-draggable";
 import "./App.css";
 
+/* const numRanks = 6; */
 const DraggableEmoji = () => {
   const emojiCodes = [
     "\u{1F363}",
@@ -33,12 +34,12 @@ const DraggableEmoji = () => {
         <div className="fTier">F</div>
       </div>
       <div className="rankSpaceColumn">
-        <div className="rankSpace"></div>
-        <div className="rankSpace"></div>
-        <div className="rankSpace"></div>
-        <div className="rankSpace"></div>
-        <div className="rankSpace"></div>
-        <div className="rankSpace"></div>
+        <div className="rankSpace" />
+        <div className="rankSpace" />
+        <div className="rankSpace" />
+        <div className="rankSpace" />
+        <div className="rankSpace" />
+        <div className="rankSpace" />
       </div>
       <div className="bankColumn">
         <div className="bank">
