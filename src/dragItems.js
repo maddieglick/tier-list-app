@@ -8,7 +8,6 @@ import React from "react";
 import Draggable from "react-draggable";
 import "./App.css";
 
-/* const numRanks = 6; */
 const DraggableEmoji = () => {
   const emojiCodes = [
     "\u{1F363}",
@@ -21,6 +20,16 @@ const DraggableEmoji = () => {
     "\u{1F32E}",
     "\u{1F35C}",
     "\u{1F366}",
+    "\u{1F32D}",
+    "\u{1F32F}",
+    "\u{1F95E}",
+    "\u{1F95F}",
+    "\u{1F96A}",
+    "\u{1F367}",
+    "\u{1F35B}",
+    "\u{1F35D}",
+    "\u{1F36E}",
+    "\u{1F36A}",
   ];
 
   return (
