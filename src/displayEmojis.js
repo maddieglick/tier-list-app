@@ -25,7 +25,7 @@ const TempName = () => {
     { code: "\u{1F36E}", label: "Flan" },
     { code: "\u{1F36A}", label: "Cookie" },
   ];
-  const [isHovering, setIsHovering] = useState(false);
+  const [isHovering, setIsHovering] = useState(null);
   return (
     <div className="bankColumn">
       <div className="bank">
@@ -33,11 +33,20 @@ const TempName = () => {
           <Draggable key={emoji.label}>
             <div
               id="emoji"
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={() => setIsHovering(false)}
+              onMouseEnter={() => setIsHovering(emoji.label)}
+              onMouseLeave={() => setIsHovering(null)}
             >
               {emoji.code}
-              {isHovering && <div>{emoji.label}</div>}
+              <div
+                className="hoverLabel"
+                style={{
+                  visibility: isHovering === emoji.label ? "visible" : "hidden",
+                  position: "absolute",
+                  top: "10px",
+                }}
+              >
+                {emoji.label}
+              </div>
             </div>
           </Draggable>
         ))}

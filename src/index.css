@@ -6,6 +6,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #b3e5fc ;
   font-size: 25px;
+  height:100vh;
+  overflow:hidden;
 }
 
 code {
@@ -46,7 +48,7 @@ code {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height:80px;
+  height:70px;
 }
 
 .aTier{
@@ -56,7 +58,7 @@ code {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height:80px;
+  height:70px;
 }
 
 .bTier{
@@ -66,7 +68,7 @@ code {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height:80px;
+  height:70px;
 }
 .cTier{
   background-color: #f7dc6f  ;
@@ -75,7 +77,7 @@ code {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height:80px;
+  height:70px;
 }
 .dTier{
   background-color: #9ccc65  ;
@@ -84,7 +86,7 @@ code {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height:80px;
+  height:70px;
 }
 .fTier{
   background-color: #4caf50  ;
@@ -93,14 +95,14 @@ code {
   justify-content: center;
   align-items: center;
   width: 80px;
-  height:80px;
+  height:70px;
 }
 .rankSpace{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(48px, 1fr));
   background-color:#90caf9 ;
-  height: 80px;
+  height: 70px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -111,7 +113,7 @@ code {
   grid-template-rows: repeat(auto-fill, minmax(48px, 1fr));
   gap:10px;
   background-color: #90caf9 ;
-  height: 530px;
+  height: 470px;
   width: 100%;
   align-items: center;
   justify-items: center;
@@ -120,7 +122,8 @@ code {
   padding: 20px;
   font-size: 30px;
   cursor:grab;
-  
+  text-align: center;
+  display:grid;
 }
 #emoji:active{
   cursor:grabbing;
@@ -130,5 +133,15 @@ code {
 }
 #description{
   padding:0px 350px 0px 20px;
+}
+.hoverLabel{
+  font-size:15px;
+  padding:3px;
+  background-color:#b3e5fc ;
+  white-space: nowrap;
+  border-radius: 5px;
+  border-style:outset;
+  border-width: 2px;
+  border-color:#90caf9;
 }
 
