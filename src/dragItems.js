@@ -5,33 +5,11 @@
 //so we will have to render these
 
 import React from "react";
-import Draggable from "react-draggable";
+// import Draggable from "react-draggable";
 import "./App.css";
+import TempName from "./displayEmojis";
 
 const DraggableEmoji = () => {
-  const emojiCodes = [
-    "\u{1F363}",
-    "\u{1F354}",
-    "\u{1F369}",
-    "\u{1F957}",
-    "\u{1F959}",
-    "\u{1F355}",
-    "\u{1F35F}",
-    "\u{1F32E}",
-    "\u{1F35C}",
-    "\u{1F366}",
-    "\u{1F32D}",
-    "\u{1F32F}",
-    "\u{1F95E}",
-    "\u{1F95F}",
-    "\u{1F96A}",
-    "\u{1F367}",
-    "\u{1F35B}",
-    "\u{1F35D}",
-    "\u{1F36E}",
-    "\u{1F36A}",
-  ];
-
   return (
     <div className="wrapper">
       <div className="rankColumn">
@@ -50,15 +28,7 @@ const DraggableEmoji = () => {
         <div className="rankSpace" />
         <div className="rankSpace" />
       </div>
-      <div className="bankColumn">
-        <div className="bank">
-          {emojiCodes.map((emoji, index) => (
-            <Draggable key={index}>
-              <div id="emoji">{emoji}</div>
-            </Draggable>
-          ))}
-        </div>
-      </div>
+      <TempName />
     </div>
   );
 };

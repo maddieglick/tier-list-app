@@ -116,18 +116,19 @@ code {
   align-items: center;
   justify-items: center;
 }
-.emoji{
-  padding: 20px;
-  font-size: 30px;
-}
 #emoji{
   padding: 20px;
   font-size: 30px;
   cursor:grab;
+  
+}
+#emoji:active{
+  cursor:grabbing;
 }
 #intro{
-  padding:20px 20px 0px 20px;
+  padding:0px 15px 0px 15px;
 }
 #description{
-  padding:0px 350px 20px 20px;
+  padding:0px 350px 0px 20px;
 }
+
