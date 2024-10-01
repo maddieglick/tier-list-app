@@ -1,7 +1,7 @@
 import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
-import DraggableEmoji from "./dragItems";
+import TierList from "./rankHere";
 
 function MyApp() {
   return (
@@ -14,7 +14,7 @@ function MyApp() {
       </p>
       <p id="description">Drag and drop to rank.</p>
       <div>
-        <DraggableEmoji />
+        <TierList />
       </div>
     </div>
   );

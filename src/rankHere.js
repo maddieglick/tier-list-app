@@ -7,9 +7,9 @@
 import React from "react";
 // import Draggable from "react-draggable";
 import "./App.css";
-import TempName from "./displayEmojis";
+import EmojiBank from "./emojiBank";
 
-const DraggableEmoji = () => {
+const TierList = () => {
   return (
     <div className="wrapper">
       <div className="rankColumn">
@@ -28,9 +28,9 @@ const DraggableEmoji = () => {
         <div className="rankSpace" />
         <div className="rankSpace" />
       </div>
-      <TempName />
+      <EmojiBank />
     </div>
   );
 };
 
-export default DraggableEmoji;
+export default TierList;

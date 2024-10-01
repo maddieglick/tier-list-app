@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Draggable from "react-draggable";
 import "./App.css";
 
-const TempName = () => {
+const EmojiBank = () => {
   const emojiCodes = [
     { code: "\u{1F363}", label: "Sushi" },
     { code: "\u{1F354}", label: "Cheeseburger" },
@@ -55,4 +55,4 @@ const TempName = () => {
   );
 };
 
-export default TempName;
+export default EmojiBank;
