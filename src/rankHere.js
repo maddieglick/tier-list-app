@@ -9,24 +9,25 @@ import React from "react";
 import "./App.css";
 import EmojiBank from "./emojiBank";
 
+const blanks = new Array(6).fill(null);
 const TierList = () => {
   return (
     <div className="wrapper">
       <div className="rankColumn">
-        <div className="sTier">S</div>
-        <div className="aTier">A</div>
-        <div className="bTier">B</div>
-        <div className="cTier">C</div>
-        <div className="dTier">D</div>
-        <div className="fTier">F</div>
+        <div className="sTier tierBase">S</div>
+        <div className="aTier tierBase">A</div>
+        <div className="bTier tierBase">B</div>
+        <div className="cTier tierBase">C</div>
+        <div className="dTier tierBase">D</div>
+        <div className="fTier tierBase">F</div>
       </div>
       <div className="rankSpaceColumn">
-        <div className="rankSpace" />
-        <div className="rankSpace" />
-        <div className="rankSpace" />
-        <div className="rankSpace" />
-        <div className="rankSpace" />
-        <div className="rankSpace" />
+        {blanks.map((blank, index) => (
+          <div className="rankSpace" key={index}>
+            {blank}
+          </div>
+        ))}
+        ;
       </div>
       <EmojiBank />
     </div>

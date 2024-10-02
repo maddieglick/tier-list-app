@@ -40,62 +40,31 @@ code {
   flex-direction: column;
   gap: 10px;
 }
-
+.tierBase{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height:70px;
+}
 .sTier{
-  background-color: #ec7063 ;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height:70px;
+  background-color: #ec7063;
 }
-
 .aTier{
-  background-color: #eb984e ;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height:70px;
+  background-color: #eb984e;
 }
-
 .bTier{
   background-color: #f8c471;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height:70px;
 }
 .cTier{
-  background-color: #f7dc6f  ;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height:70px;
+  background-color: #f7dc6f;
 }
 .dTier{
-  background-color: #9ccc65  ;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height:70px;
+  background-color: #9ccc65;
 }
 .fTier{
-  background-color: #4caf50  ;
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  width: 80px;
-  height:70px;
+  background-color: #4caf50;
 }
 .rankSpace{
   display: grid;
