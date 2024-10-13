@@ -21,6 +21,7 @@ code {
   gap: 10px;
   background-color: #070455;
   padding:10px;
+  height:470px;
 }
 
 .rankColumn{
@@ -39,6 +40,8 @@ code {
   display:flex;
   flex-direction: column;
   gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
 .tierBase{
   display: flex;
@@ -106,11 +109,28 @@ code {
 .hoverLabel{
   font-size:15px;
   padding:3px;
-  background-color:#b3e5fc ;
+  background-color:#b3e5fc;
   white-space: nowrap;
   border-radius: 5px;
   border-style:outset;
   border-width: 2px;
   border-color:#070455;
 }
+#restart{
+  background-color:#90caf9;
+  border-color:#070455;
+  border-style:outset;
+  border-radius: 5px;
+  font-family:VT323;
+  font-size: 25px;
+  margin: 10px;
+  width: 65%;
+  position: static;
 
+}
+#restart:hover{
+  cursor:grab;
+}
+#restart:active{
+  cursor:grabbing;
+}

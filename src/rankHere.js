@@ -27,7 +27,6 @@ const TierList = () => {
             {blank}
           </div>
         ))}
-        ;
       </div>
       <EmojiBank />
     </div>

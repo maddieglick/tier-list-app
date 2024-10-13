@@ -16,6 +16,9 @@ function MyApp() {
       <div>
         <TierList />
       </div>
+      {/* <button id="restartButton" onClick={() => window.location.reload()}>
+        Click to Restart
+      </button> */}
     </div>
   );
 }

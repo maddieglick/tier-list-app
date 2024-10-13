@@ -51,6 +51,9 @@ const EmojiBank = () => {
           </Draggable>
         ))}
       </div>
+      <button id="restart" onClick={() => window.location.reload()}>
+        Click to Restart
+      </button>
     </div>
   );
 };
